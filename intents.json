@@ -1,0 +1,432 @@
+{
+    "intents":[
+        {
+            "tag": "Saludo",
+            "patterns": ["Hola", "Buenos días", "Día a dia", "Good morning", "Saludos", "Buenas tardes", "Buenas noches", "Saludos cordiales", "Muy buenos días", "Un saludo", "Qué gusto verte", "Hola, buen día", "Buen día"],
+            "responses": ["Hola! ¿Cómo puedo ayudarte?", "Encantado de conocerte!", "Buen día"]
+        },
+        {
+            "tag": "Preguntas-Estado de animo",
+            "patterns": ["Que tal", "Como estas?","Como estas","Como estás?", "How are you","qué tal"],
+            "responses": ["Hola! ¿Cómo puedo ayudarte?","Me encuentro bien, gracias por preguntar. En qué te puedo ayudar?","Estoy feliz por ser capaz de ayudarte"]
+        
+        },
+        {
+            "tag": "Nombre",
+            "patterns": ["cómo te llamas?", "¿como te llamas?", "como se llama tu nombre?","Cual es tu nombre?","Cual es tu nombre?"],
+            "responses": ["Mi nombre es ChatBot, y estoy aquí para ayudarte con tus dudas.", "Me llamo ChatBot, y estoy aquí para ayudarte con tus preguntas."]
+        },
+        {
+            "tag":"Preguntas-Generales",
+            "patterns": ["Tengo problemas","tengo problemas","Que es eso","Qué es eso?","Estoy confundido"],
+            "responses":["A qué te refieres","Podrías ser mas especifico?"]
+        },
+        {
+            "tag":"Me fue mal",
+            "patterns":["El día de hoy ha sido muy difícil para mí",
+                        "Estoy pasando por un mal momento hoy, ¿puedes ayudarme?",
+                        "No me siento bien hoy, ¿qué recomiendas hacer?",
+                        "Todo parece ir mal hoy, ¿qué me sugieres?",
+                        "Estoy teniendo un día difícil",
+                        "Me siento triste y no sé qué hacer, ¿puedes ayudarme?"],
+                        
+            "responses": ["Oh no! Lo siento mucho por lo que estás pasando. Recuerda que no estás solo/a y estoy aquí para escucharte y apoyarte.",
+                            "Entiendo cómo te sientes. ¿Te gustaría hablar sobre ello o prefieres que te dé algún consejo para sentirte mejor?",
+                            "Es normal sentirse así a veces. ¿Te gustaría que te ayude con algo específico o simplemente quieres desahogarte?"]        
+        },
+        {
+            "tag":"Consejos-Bad day",
+            "patterns":["Quiero consejos sobre como sentirme más alegre?",
+                        "¿Cómo puedo sentirme más optimista?",
+                        "¿Cómo puedo mejorar mi optimismo?",
+                        "¿Cómo puedo sentirme más positiva?",
+                    "El dia ha sido muy dificil, tienes algunos consejos?"],
+
+            "responses":[
+                "Hay muchas formas de sentirse más optimista. ¿Te gustaría hablar sobre cómo puedes hacerlo?",
+                "Puedes intentar cambiar tus objetivos y cambiar tu estrategia para mejorar tus habilidades. ¿Te gustaría que te brinde información sobre cómo hacer esto?",
+                "Puedes considerar la ayuda de un profesional de la salud mental. ¿Te gustaría que te ayude a encontrar recursos de ayuda cercanos?",
+                "Puedes intentar revisar tus emociones y ver si hay algo que puedas cambiar para mejorar tu mood."
+            ]
+        },
+        {
+            "tag": "Deseo de dejar de vivir",
+            "patterns": [
+                "No quiero seguir viviendo más.",
+                "Siento que ya no puedo más.",
+                "No encuentro razones para seguir adelante.",
+                "Estoy cansado/a de todo, no veo salida.",
+                "Nada tiene sentido para mí, no quiero continuar así."
+            ],
+            "responses": [
+                "Lamento mucho que estés sintiendo esto. ¿Te gustaría hablar más sobre lo que estás pasando?",
+                "Es importante que sepas que no estás solo/a en esto. ¿Hay alguien con quien te sientas cómodo/a compartiendo cómo te sientes?",
+                "Aunque ahora todo parezca abrumador, hay formas de sentirse mejor. ¿Te gustaría que te brinde información sobre recursos de apoyo?",
+                "Tu vida es valiosa y mereces sentirte bien. ¿Has considerado hablar con un profesional de la salud mental?",
+                "Entiendo que puede ser difícil, pero es importante buscar apoyo. ¿Te gustaría que te ayudara a encontrar recursos de ayuda cercanos?"
+            ]
+        },
+        {
+            "tag": "No sé qué hacer",
+            "patterns": [
+                "No sé qué hacer.",
+                "Estoy muy confundido/a, ¿qué debo hacer?",
+                "Me siento perdido/a y no sé qué camino tomar.",
+                "No tengo idea de qué hacer en esta situación.",
+                "Estoy bloqueado/a y no puedo decidir qué hacer."
+            ],
+            "responses": [
+                "Entiendo que sentirte así puede ser muy difícil. ¿Te gustaría hablar más sobre lo que está pasando?",
+                "Es normal sentirse perdido/a a veces. ¿Hay algo específico que te preocupa o te está causando confusión?",
+                "A veces, hablar sobre tus opciones puede ayudar. ¿Quieres explorar juntos algunas posibilidades?",
+                "Tomar decisiones puede ser abrumador. ¿Qué tal si empezamos con algo pequeño y vamos paso a paso?",
+                "Estoy aquí para apoyarte. Cuéntame más sobre tu situación y veamos cómo puedo ayudarte a encontrar claridad."
+            ]
+        },
+        {
+            "tag": "Falta de motivación",
+            "patterns": ["Últimamente me siento desmotivado/a, ¿cómo puedo recuperar mi motivación?",
+                         "Estoy luchando por encontrar motivación para mis actividades diarias, ¿qué me recomiendas hacer?",
+                         "Necesito ayuda para superar la falta de motivación, ¿hay algo que pueda hacer para sentirme más inspirado/a?",
+                         "Me cuesta encontrar energía y entusiasmo para hacer las cosas, ¿cómo puedo cambiar esto?",
+                         "Siento que he perdido la motivación en mi vida personal/profesional, ¿qué estrategias puedo implementar para recuperarla?"],
+
+            "responses": ["La falta de motivación puede ser desafiante, pero es posible superarla. ¿Te gustaría explorar cómo establecer metas realistas o encontrar nuevas fuentes de inspiración?",
+                          "Es importante entender las razones detrás de tu falta de motivación. ¿Te gustaría hablar sobre cómo identificar lo que te impulsa y cómo establecer pequeños pasos para avanzar?",
+                          "A veces, la falta de motivación puede estar relacionada con el estrés o la falta de balance. ¿Te gustaría explorar técnicas para manejar el estrés y crear una rutina que te apoye emocionalmente?"]
+        },
+        {
+            "tag": "Presión social",
+            "patterns": ["Siento mucha presión por cumplir con las expectativas sociales, ¿cómo puedo manejar esto?",
+                         "Estoy lidiando con la presión de ser perfecto/a para los demás, ¿qué consejos tienes para aliviar esta carga?",
+                         "Necesito ayuda para establecer límites saludables y decir no cuando sea necesario, ¿puedes ofrecerme algunas estrategias?",
+                         "Me siento abrumado/a por las expectativas de los demás, ¿cómo puedo aprender a cuidar más de mí mismo/a?",
+                         "Siento que siempre estoy comparándome con los demás y eso me está afectando, ¿qué puedo hacer al respecto?"],
+
+            "responses": ["La presión social puede ser abrumadora. ¿Te gustaría explorar técnicas para gestionar el estrés y fortalecer tu autoestima?",
+                          "Es importante establecer límites saludables y priorizar tu bienestar emocional. ¿Te gustaría hablar sobre cómo comunicarte efectivamente tus límites y necesidades a los demás?",
+                          "A veces, la autoaceptación puede ayudar a reducir la presión de las expectativas sociales. ¿Te gustaría explorar estrategias para mejorar tu autoimagen y construir una mentalidad más positiva?"]
+        },   
+        {
+            "tag": "Estrés por trabajo",
+            "patterns": [
+                "Estoy muy estresado/a por el trabajo.",
+                "No puedo manejar la carga laboral, ¿qué debo hacer?",
+                "El trabajo me está abrumando.",
+                "Siento que no puedo con las tareas del trabajo.",
+                "Estoy agotado/a por el trabajo."
+            ],
+            "responses": [
+                "El estrés laboral puede ser muy difícil. ¿Te gustaría hablar sobre lo que te está estresando?",
+                "A veces, organizar las tareas puede ayudar. ¿Quieres que exploremos juntos cómo hacerlo?",
+                "Tomarse un descanso puede ser beneficioso. ¿Has pensado en tomar unos minutos para relajarte?",
+                "Priorizar tus tareas puede aliviar la carga. ¿Qué es lo más urgente en tu lista?",
+                "Es importante cuidar de ti mismo/a. ¿Hay algo que puedas hacer para reducir el estrés en este momento?"
+            ]
+        },
+        {
+            "tag": "Problemas de sueño",
+            "patterns": [
+                "No puedo dormir bien.",
+                "Tengo problemas para conciliar el sueño.",
+                "Me despierto a mitad de la noche.",
+                "Estoy muy cansado/a porque no duermo bien.",
+                "Sufro de insomnio.",
+                "Quiero ayuda con mi insomnio",
+                "Tengo problemas de sueño"
+            ],
+            "responses": [
+                "Los problemas de sueño pueden ser frustrantes. ¿Te gustaría hablar sobre lo que te está afectando?",
+                "A veces, crear una rutina relajante antes de dormir puede ayudar. ¿Te gustaría intentar eso?",
+                "Evitar el uso de pantallas antes de dormir puede mejorar el sueño. ¿Has probado eso?",
+                "Consultar a un profesional puede ser útil. ¿Has considerado hablar con un médico sobre tu insomnio?"
+            ]
+        },
+        {
+            "tag": "Problemas alimenticios",
+            "patterns": [
+                "Tengo problemas con mi alimentación.",
+                "No sé cómo comer de manera saludable.",
+                "Tengo un trastorno alimenticio.",
+                "No puedo dejar de comer en exceso.",
+                "No tengo apetito y me preocupa."
+            ],
+            "responses": [
+                "Los problemas alimenticios son serios. ¿Te gustaría hablar más sobre lo que te está afectando?",
+                "Es importante buscar apoyo profesional. ¿Has considerado hablar con un nutricionista o un terapeuta?",
+                "Crear un plan de alimentación puede ser útil. ¿Te gustaría explorar algunas opciones?",
+                "Tomar pequeños pasos hacia una alimentación saludable puede ser beneficioso. ¿Qué te gustaría intentar?"
+            ]
+        },
+        {
+            "tag": "Falta de dirección en la vida",
+            "patterns": [
+                "No sé qué hacer con mi vida.",
+                "Me siento perdido/a y sin dirección.",
+                "No tengo metas claras.",
+                "Siento que mi vida no tiene propósito.",
+                "No sé cuál es mi camino."
+            ],
+            "responses": [
+                "Es normal sentirse perdido/a a veces. ¿Te gustaría hablar sobre lo que te preocupa?",
+                "Explorar tus intereses y pasiones puede ayudar. ¿Te gustaría intentar eso?",
+                "Establecer pequeñas metas puede dar dirección. ¿Te gustaría trabajar en eso juntos?",
+                "Buscar consejo de alguien de confianza puede ser útil. ¿Hay alguien con quien puedas hablar?"
+            ]
+        },
+        {
+            "tag": "Problemas académicos",
+            "patterns": [
+                "Estoy teniendo problemas en la escuela.",
+                "No puedo concentrarme en mis estudios.",
+                "Mis calificaciones están bajando.",
+                "Siento que no estoy aprendiendo nada.",
+                "Estoy estresado/a por mis exámenes."
+            ],
+            "responses": [
+                "Los problemas académicos pueden ser estresantes. ¿Te gustaría hablar sobre lo que te está afectando?",
+                "Establecer una rutina de estudio puede ayudar. ¿Te gustaría explorar cómo hacerlo?",
+                "Buscar ayuda de un tutor puede ser útil. ¿Has considerado esa opción?",
+                "Es importante cuidarte a ti mismo/a. ¿Estás tomando descansos adecuados mientras estudias?"
+            ]
+        },
+        {
+            "tag": "Miedo a hablar en público",
+            "patterns": [
+                "Tengo miedo de hablar en público.",
+                "Me pongo muy nervioso/a cuando tengo que hablar frente a otros.",
+                "No sé cómo superar mi miedo a hablar en público.",
+                "Siento mucha ansiedad antes de una presentación.",
+                "El miedo a hablar en público me está afectando."
+            ],
+            "responses": [
+                "El miedo a hablar en público es común. ¿Te gustaría hablar sobre lo que te preocupa?",
+                "Practicar puede ayudar a reducir el miedo. ¿Te gustaría intentar practicar juntos?",
+                "Buscar técnicas de relajación puede ser útil. ¿Has considerado eso?",
+                "Es importante recordar tus fortalezas. ¿Hay algo que te haga sentir más seguro/a?"
+            ]
+        },
+        {
+            "tag": "Relaciones sociales",
+            "patterns": [
+                "Tengo problemas para hacer amigos.",
+                "Me siento solo/a en situaciones sociales.",
+                "No sé cómo iniciar una conversación.",
+                "Me cuesta mantener amistades.",
+                "Siento ansiedad en situaciones sociales."
+            ],
+            "responses": [
+                "Las relaciones sociales pueden ser desafiantes. ¿Te gustaría hablar sobre lo que te está afectando?",
+                "Practicar habilidades sociales puede ayudar. ¿Te gustaría explorar algunas técnicas?",
+                "Buscar actividades grupales puede ser útil. ¿Has considerado unirte a un club o grupo?",
+                "Es importante ser tú mismo/a. ¿Qué te gustaría que la gente supiera sobre ti?"
+            ]
+        },
+        {
+            "tag": "Transición de carrera",
+            "patterns": [
+                "Estoy considerando cambiar de carrera.",
+                "No estoy satisfecho/a con mi trabajo actual.",
+                "No sé si debería cambiar de carrera.",
+                "Me siento inseguro/a sobre mi futuro profesional.",
+                "Quiero cambiar de carrera pero no sé cómo."
+            ],
+            "responses": [
+                "Cambiar de carrera puede ser una gran decisión. ¿Te gustaría hablar sobre tus opciones?",
+                "Explorar tus intereses y habilidades puede ayudar. ¿Te gustaría trabajar en eso juntos?",
+                "Buscar consejo de un orientador profesional puede ser útil. ¿Has considerado esa opción?",
+                "Tomar pequeños pasos hacia una nueva carrera puede ser beneficioso. ¿Qué te gustaría intentar primero?"
+            ]
+        },
+        {
+            "tag": "Problemas con compañeros de trabajo",
+            "patterns": [
+                "Tengo problemas con mis compañeros de trabajo.",
+                "No sé cómo manejar los conflictos en el trabajo.",
+                "Me siento incómodo/a con mis colegas.",
+                "Las tensiones en el trabajo me están afectando.",
+                "No puedo comunicarme bien con mis compañeros de trabajo."
+            ],
+            "responses": [
+                "Los conflictos en el trabajo pueden ser difíciles. ¿Te gustaría hablar sobre lo que te está afectando?",
+                "La comunicación abierta puede ayudar. ¿Hay algo específico que te preocupa?",
+                "Buscar la mediación de un supervisor puede ser útil. ¿Has considerado esa opción?",
+                "Es importante expresar tus sentimientos de manera calmada. ¿Te gustaría practicar cómo hacerlo?"
+            ]
+        },
+        {
+            "tag": "Manejo del tiempo",
+            "patterns": [
+                "No sé cómo manejar mi tiempo.",
+                "Siento que no tengo suficiente tiempo para todo.",
+                "Estoy siempre apurado/a y estresado/a.",
+                "No sé cómo priorizar mis tareas.",
+                "Me cuesta organizar mi tiempo."
+            ],
+            "responses": [
+                "El manejo del tiempo puede ser un desafío. ¿Te gustaría hablar sobre tus prioridades?",
+                "Crear un horario puede ayudar. ¿Te gustaría explorar cómo hacerlo?",
+                "Priorizar tus tareas puede aliviar la carga. ¿Qué es lo más urgente en tu lista?",
+                "Buscar herramientas de gestión del tiempo puede ser útil. ¿Has probado alguna aplicación o método?"
+            ]
+        },
+        {
+            "tag": "Inseguridades personales",
+            "patterns": [
+                "Me siento muy inseguro/a conmigo mismo/a.",
+                "No me gusta cómo soy.",
+                "Siento que no soy lo suficientemente bueno/a.",
+                "Tengo muchas inseguridades personales.",
+                "No sé cómo superar mis inseguridades."
+            ],
+            "responses": [
+                "Es normal tener inseguridades. ¿Te gustaría hablar sobre lo que te está afectando?",
+                "Es importante recordar tus cualidades positivas. ¿Te gustaría que te ayudara a identificarlas?",
+                "Hablar con un terapeuta puede ser útil. ¿Has considerado esa opción?",
+                "Tratarte a ti mismo/a con amabilidad es crucial. ¿Hay algo que puedas hacer para cuidarte hoy?"
+            ]
+        },
+        {
+            "tag": "Crisis existencial",
+            "patterns": [
+                "Siento que mi vida no tiene sentido.",
+                "Estoy pasando por una crisis existencial.",
+                "No sé cuál es el propósito de mi vida.",
+                "Me siento perdido/a y sin rumbo.",
+                "Estoy cuestionando el sentido de todo."
+            ],
+            "responses": [
+                "Las crisis existenciales pueden ser difíciles. ¿Te gustaría hablar sobre lo que estás sintiendo?",
+                "Explorar tus valores y creencias puede ayudar. ¿Te gustaría trabajar en eso juntos?",
+                "Buscar apoyo de un terapeuta puede ser útil. ¿Has considerado esa opción?",
+                "Tomar tiempo para reflexionar puede ser beneficioso. ¿Hay algo que te ayude a sentirte más claro/a?"
+            ]
+        },
+        {
+            "tag": "Problemas de identidad",
+            "patterns": [
+                "No sé quién soy realmente.",
+                "Estoy teniendo una crisis de identidad.",
+                "No me siento cómodo/a con quien soy.",
+                "Estoy cuestionando mi identidad.",
+                "No sé cómo aceptar quién soy."
+            ],
+            "responses": [
+                "Los problemas de identidad pueden ser muy confusos. ¿Te gustaría hablar sobre lo que te preocupa?",
+                "Explorar tus intereses y valores puede ayudar. ¿Te gustaría trabajar en eso juntos?",
+                "Buscar apoyo de un terapeuta puede ser útil. ¿Has considerado esa opción?",
+                "Es importante ser paciente contigo mismo/a. ¿Hay algo que puedas hacer para sentirte más aceptado/a?"
+            ]
+        },
+        {
+            "tag": "Problemas con la autoimagen",
+            "patterns": [
+                "No me gusta cómo me veo.",
+                "Tengo problemas con mi autoimagen.",
+                "Siento que mi apariencia me afecta mucho.",
+                "No sé cómo aceptar mi cuerpo.",
+                "Estoy muy insatisfecho/a con mi apariencia."
+            ],
+            "responses": [
+                "Los problemas con la autoimagen pueden ser muy dolorosos. ¿Te gustaría hablar sobre lo que te afecta?",
+                "Es importante recordar que todos somos únicos. ¿Hay algo positivo que te guste de ti mismo/a?",
+                "Hablar con un terapeuta puede ser útil. ¿Has considerado esa opción?",
+                "Buscar apoyo de amigos y familiares puede ser beneficioso. ¿Hay alguien con quien puedas hablar?"
+            ]
+        },
+        {
+            "tag": "Problemas con la tecnología",
+            "patterns": [
+                "No sé cómo usar la tecnología.",
+                "La tecnología me resulta muy difícil.",
+                "Me siento frustrado/a con la tecnología.",
+                "No sé cómo resolver problemas tecnológicos.",
+                "Siento que la tecnología me supera."
+            ],
+            "responses": [
+                "La tecnología puede ser complicada. ¿Te gustaría hablar sobre lo que te está frustrando?",
+                "Buscar tutoriales en línea puede ser útil. ¿Te gustaría intentar eso?",
+                "A veces, pedir ayuda a alguien con más experiencia puede resolver el problema. ¿Hay alguien a quien puedas acudir?",
+                "Es importante ser paciente contigo mismo/a. ¿Hay algo específico que te gustaría aprender?"
+            ]
+        },
+        {
+            "tag": "Problemas legales",
+            "patterns": [
+                "Estoy teniendo problemas legales.",
+                "No sé cómo manejar mi situación legal.",
+                "Me siento abrumado/a por mis problemas legales.",
+                "Tengo miedo de las consecuencias legales.",
+                "No sé qué hacer con mis problemas legales."
+            ],
+            "responses": [
+                "Los problemas legales pueden ser muy estresantes. ¿Te gustaría hablar sobre lo que te preocupa?",
+                "Buscar asesoría legal puede ser crucial. ¿Has considerado hablar con un abogado?",
+                "Es importante entender tus opciones legales. ¿Te gustaría explorar algunas juntas?",
+                "Tomar pequeños pasos puede ser beneficioso. ¿Qué es lo más urgente que necesitas resolver?"
+            ]
+        },
+        {
+            "tag": "Miedo o fobia",
+            "patterns": ["Tengo mucho miedo a [objeto/situación], ¿cómo puedo superar este miedo?",
+                         "Sufro de una fobia que está afectando mi vida, ¿qué puedo hacer?",
+                         "Necesito ayuda para manejar mi miedo irracional, ¿tienes algún consejo?",
+                         "Siento pánico cuando enfrento [objeto/situación], ¿cómo puedo aprender a controlarlo?",
+                         "Mi fobia me está limitando, ¿cómo puedo empezar a superarla?"],
+
+            "responses": ["Los miedos y las fobias pueden ser muy difíciles de manejar, pero hay estrategias que pueden ayudarte. ¿Te gustaría explorar técnicas de exposición gradual y cómo enfrentar tus miedos paso a paso?",
+                          "Es importante entender la raíz de tus miedos. ¿Te gustaría hablar sobre cómo identificar los desencadenantes de tu miedo y trabajar con un profesional para superarlos?",
+                          "La práctica de la relajación y el mindfulness puede ayudar a reducir el miedo y la ansiedad. ¿Te gustaría aprender más sobre estas técnicas y cómo incorporarlas en tu vida diaria?"]
+        },
+        {
+            "tag": "Pensamientos negativos",
+            "patterns": ["Tengo muchos pensamientos negativos que no puedo controlar, ¿qué puedo hacer?",
+                         "Me siento atrapado/a en un ciclo de pensamientos negativos, ¿cómo puedo salir de él?",
+                         "Necesito ayuda para detener los pensamientos negativos, ¿tienes algún consejo?",
+                         "Siento que los pensamientos negativos están afectando mi vida, ¿qué estrategias puedo usar para manejarlos?",
+                         "Me cuesta mantener una perspectiva positiva, ¿cómo puedo cambiar mi forma de pensar?"],
+
+            "responses": ["Los pensamientos negativos pueden ser muy abrumadores, pero hay técnicas que pueden ayudarte. ¿Te gustaría explorar la reestructuración cognitiva para cambiar tu forma de pensar?",
+                          "Es importante desafiar los pensamientos negativos y reemplazarlos con afirmaciones positivas. ¿Te gustaría hablar sobre cómo practicar el pensamiento positivo y la gratitud?",
+                          "El mindfulness y la meditación pueden ser herramientas útiles para manejar los pensamientos negativos. ¿Te gustaría aprender más sobre estas prácticas y cómo incorporarlas en tu vida diaria?"]
+        },
+        {
+            "tag": "Ansiedad social",
+            "patterns": ["Me siento muy ansioso/a en situaciones sociales, ¿cómo puedo manejarlo?",
+                         "Tengo miedo de hablar en público y me pongo muy nervioso/a, ¿qué puedo hacer?",
+                         "La ansiedad social me está afectando mucho, ¿tienes algún consejo para superarla?",
+                         "Me cuesta interactuar con otras personas por mi ansiedad, ¿cómo puedo mejorar?",
+                         "Siento mucha ansiedad cuando estoy en grupos grandes, ¿qué estrategias me recomiendas?"],
+
+
+            "responses": ["La ansiedad social puede ser muy desafiante, pero hay formas de manejarla. ¿Te gustaría hablar sobre técnicas de respiración y relajación que pueden ayudarte a calmarte en situaciones sociales?",
+                          "Es importante exponerse gradualmente a situaciones sociales para aumentar tu confianza. ¿Te gustaría explorar cómo establecer pequeños objetivos y practicarlos?",
+                          "El apoyo social puede ser muy beneficioso. ¿Te gustaría hablar sobre cómo encontrar un grupo de apoyo o trabajar con un terapeuta para manejar tu ansiedad social?"]
+        },
+        {
+            "tag": "Control de impulsos",
+            "patterns": ["Tengo problemas para controlar mis impulsos, ¿qué puedo hacer para mejorar?",
+                         "Siento que actúo sin pensar y eso me está causando problemas, ¿cómo puedo manejar mis impulsos?",
+                         "Necesito ayuda para controlar mis impulsos y tomar decisiones más conscientes, ¿tienes algún consejo?",
+                         "Me cuesta mucho resistir la tentación de actuar impulsivamente, ¿qué estrategias puedo usar?",
+                         "Siento que mis impulsos están afectando mis relaciones, ¿cómo puedo aprender a controlarlos?"],
+            
+                         "responses": ["El control de impulsos puede ser difícil, pero es posible mejorarlo con práctica. ¿Te gustaría explorar técnicas de mindfulness y cómo aplicarlas en tu vida diaria?",
+                          "Es importante identificar los desencadenantes de tus impulsos. ¿Te gustaría hablar sobre cómo reconocer estos desencadenantes y desarrollar estrategias para manejarlos?",
+                          "La práctica de la autorreflexión y el establecimiento de límites claros pueden ayudarte a controlar tus impulsos. ¿Te gustaría explorar cómo establecer metas y monitorear tu progreso?"]
+        },
+        {
+            "tag": "Trauma pasado",
+            "patterns": ["Estoy teniendo dificultades para superar un trauma pasado, ¿cómo puedo empezar a sanar?",
+                         "El trauma pasado está afectando mi vida actual, ¿qué puedo hacer para manejarlo?",
+                         "Necesito ayuda para lidiar con los recuerdos dolorosos de un evento traumático, ¿tienes algún consejo?",
+                         "Siento que el trauma pasado está influyendo en mis relaciones y bienestar, ¿cómo puedo superarlo?",
+                         "Estoy buscando formas de sanar emocionalmente después de un trauma, ¿qué estrategias me recomiendas?"],
+
+            "responses": ["Superar un trauma puede ser un proceso largo y difícil, pero es posible. ¿Te gustaría hablar sobre cómo encontrar un terapeuta especializado en trauma para recibir apoyo profesional?",
+                          "Es importante permitirte sentir y procesar tus emociones. ¿Te gustaría explorar técnicas de autocuidado y manejo del estrés que pueden ayudarte en tu proceso de sanación?",
+                          "El apoyo de seres queridos y grupos de apoyo puede ser muy valioso. ¿Te gustaría hablar sobre cómo construir una red de apoyo y compartir tus experiencias de manera segura?"]
+        }
+    ]
+}
+
